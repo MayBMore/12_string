@@ -5,15 +5,12 @@
 
 int main(void) {
 	char src[100] = "Programming course";
-	char dst[100];
-	int i;
+	int i = 0; //문자 수를 세는 변수 
 	
-	while ( src[i] != '\0') {//src 내용을 dst로 옮김
-		dst[i] = src[i];
+	while ( src[i] != 0) {//src 내용을 dst로 옮김
 		i++;
  }
-	dst[i] = '\0';
 		
-	printf("dst : %s\n", dst) ;
+	printf("문자열\"%s\"의 길이 : %i", src, i) ;
 	return 0;
 }
