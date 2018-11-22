@@ -1,0 +1,19 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+/* run this program using the console pauser or add your own getch, system("pause") or input loop */
+
+int main(void) {
+	char src[100] = "Programming course";
+	char dst[100];
+	int i;
+	
+	while ( src[i] != '\0') {//src 내용을 dst로 옮김
+		dst[i] = src[i];
+		i++;
+ }
+	dst[i] = '\0';
+		
+	printf("dst : %s\n", dst) ;
+	return 0;
+}
